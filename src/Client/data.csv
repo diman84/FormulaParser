@@ -1,0 +1,6 @@
+Country,Concept,Currency,Scale,Id,Type,2012,2013,2014,2015,2016
+United States,GDP,USD,Billions,USAGDP$,,"12,574.14","12,567.95","13,118.25","16,332.31","16,825.77"
+United States,GDP per capita,USD,Unit,USAGDPP$,,"40,008.87","39,712.16","41,150.23","50,866.79","52,044.11"
+Eurozone,GDP,EUR,Billions,CANGDP$,,"9,836.46","9,937.27","10,160.82","10,493.38","10,766.00"
+Eurozone,GDP per capita,EUR,Unit,CANGDPP$,,"29,260.62","29,461.50","30,023.43","30,906.58","31,581.60"
+,,EUR,,EURUSD,CurrencyConversion,1.28,1.33,1.33,1.11,1.11
