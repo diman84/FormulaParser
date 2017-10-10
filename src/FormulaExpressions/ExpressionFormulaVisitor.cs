@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Linq;
+using Antlr.Generated;
 using Antlr4.Runtime;
 using Antlr4.Runtime.Misc;
 using Antlr4.Runtime.Tree;
-using Antlr.Generated;
 using Expressions;
 using ValueType = Expressions.ValueType;
 
-namespace Antlr.Expressions
+namespace FormulaExpressions
 {
     public class ExpressionFormulaVisitor : FormulaBaseVisitor<IFormulaExpression>
     {

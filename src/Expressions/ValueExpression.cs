@@ -9,24 +9,15 @@
 
     public class ValueExpression : IFormulaExpression
     {
-        private readonly string _text;
-        private readonly ValueType _type;
-
         public ValueExpression(string text, ValueType type)
         {
-            _text = text;
-            _type = type;
+            Text = text;
+            Type = type;
         }
 
-        public string Text
-        {
-            get { return _text; }
-        }
+        public string Text { get; }
 
-        public ValueType Type
-        {
-            get { return _type; }
-        }
+        public ValueType Type { get; }
 
         public void Accept(IFormulaExpressionVisitor visitor)
         {

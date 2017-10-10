@@ -1,8 +1,8 @@
-﻿using Antlr4.Runtime;
-using Antlr.Generated;
+﻿using Antlr.Generated;
+using Antlr4.Runtime;
 using Expressions;
 
-namespace Antlr.Expressions
+namespace FormulaExpressions
 {
     public static class ExpressionFormulaParser
     {

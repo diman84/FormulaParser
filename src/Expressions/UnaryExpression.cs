@@ -7,24 +7,15 @@
 
     public class UnaryExpression : IFormulaExpression
     {
-        private readonly IFormulaExpression _expression;
-        private readonly UnaryExpressionType _type;
-
         public UnaryExpression(UnaryExpressionType type, IFormulaExpression expression)
         {
-            _type = type;
-            _expression = expression;
+            Type = type;
+            Expression = expression;
         }
 
-        public IFormulaExpression Expression
-        {
-            get { return _expression; }
-        }
+        public IFormulaExpression Expression { get; }
 
-        public UnaryExpressionType Type
-        {
-            get { return _type; }
-        }
+        public UnaryExpressionType Type { get; }
 
         public void Accept(IFormulaExpressionVisitor visitor)
         {

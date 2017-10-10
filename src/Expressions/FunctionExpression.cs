@@ -2,24 +2,15 @@
 {
     public class FunctionExpression : IFormulaExpression
     {
-        private readonly string _identifier;
-        private readonly IFormulaExpression[] _expressions;
-
         public FunctionExpression(string identifier, IFormulaExpression[] expressions)
         {
-            _identifier = identifier;
-            _expressions = expressions;
+            Identifier = identifier;
+            Expressions = expressions;
         }
 
-        public string Identifier
-        {
-            get { return _identifier; }
-        }
+        public string Identifier { get; }
 
-        public IFormulaExpression[] Expressions
-        {
-            get { return _expressions; }
-        }
+        public IFormulaExpression[] Expressions { get; }
 
         public void Accept(IFormulaExpressionVisitor visitor)
         {
