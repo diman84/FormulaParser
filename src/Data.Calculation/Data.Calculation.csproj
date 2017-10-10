@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E5CE6B9-24D6-4195-BF68-67A324E71590}</ProjectGuid>
+    <ProjectGuid>{3BAFCCDE-5721-4F20-BBE2-E8C1C63271FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Data</RootNamespace>
-    <AssemblyName>Data</AssemblyName>
+    <RootNamespace>Data.Calculation</RootNamespace>
+    <AssemblyName>Data.Calculation</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,19 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data.cs" />
+    <Compile Include="DataCalculator.cs" />
+    <Compile Include="DataFunctions.cs" />
+    <Compile Include="DataTransformationVisitor.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="Formatting\DataRecordFormatter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{3e5ce6b9-24d6-4195-bf68-67a324e71590}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Expressions\Expressions.csproj">
       <Project>{c89e8142-904e-4313-a769-d5039394862d}</Project>
       <Name>Expressions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FormulaExpressions\FormulaExpressions.csproj">
-      <Project>{84874fe0-9683-4c22-90e6-df3bba0f3286}</Project>
-      <Name>FormulaExpressions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

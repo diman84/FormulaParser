@@ -51,6 +51,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Data.Calculation\Data.Calculation.csproj">
+      <Project>{3bafccde-5721-4f20-bbe2-e8c1c63271fb}</Project>
+      <Name>Data.Calculation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data\Data.csproj">
       <Project>{3e5ce6b9-24d6-4195-bf68-67a324e71590}</Project>
       <Name>Data</Name>
